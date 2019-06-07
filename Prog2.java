@@ -11,22 +11,16 @@ class Prog2{
 	 while (st.hasMoreTokens())
 	 {  temp="";
 		word=st.nextToken(); 
-		System.out.println(word);
+		
 		for(int i=word.length()-1;i>=0;i--)
 		{   
-			temp=temp+word.charAt(i);
-			
-			
+			temp=temp+word.charAt(i);	
 			
 		}
 		
-		if(temp.contentEquals(word))
-		{System.out.println("Palindrome "+word);
-		 
-		 
-	 }
-	 
-	
+		if(temp.equalsIgnoreCase(word))
+		{System.out.println("Palindrome "+word);		 
+	    }	
 	}
 	}
 }
